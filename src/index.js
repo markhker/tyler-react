@@ -10,6 +10,7 @@ import App from './pages/App'
 
 const sagaMiddleware = createSagaMiddleware()
 
+// Creating the redux store and attaching the saga middleware
 const store = createStore(
   combineReducers({
     ...reducers
@@ -20,6 +21,7 @@ const store = createStore(
   )
 )
 
+// Runs sagas in app init
 rootSaga.forEach(saga => sagaMiddleware.run(saga))
 
 ReactDOM.render(

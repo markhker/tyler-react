@@ -7,8 +7,11 @@ import styles from './styles.css'
 
 const Tyler = props => {
   const { tiles, color, opacity, oddClicked, normalClicked } = props
+
+  // Get the tile flex-basis according to the number of tiles
   const tileBasis = 100 / tiles
 
+  // Function that generates the matrix of tiles
   const generateMatrix = (
     base,
     color,
@@ -17,9 +20,9 @@ const Tyler = props => {
     oddClicked,
     normalClicked
   ) => {
-    const quad = base * base
-    const oddBox = Math.floor(Math.random() * quad)
-    let boxes = []
+    const quad = base * base // Get the total number of tiles
+    const oddBox = Math.floor(Math.random() * quad) // Get a random tile from the matrix
+    let boxes = [] // Here I add the generated tiles
 
     for (let i = 0; i < quad; i++) {
       if (oddBox === i) {

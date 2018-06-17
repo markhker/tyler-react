@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 import styles from './styles.css'
 
 const Tile = props => {
+  // This defines the different opacity for the odd tile
   let oddColor = props.item === 'odd' ? props.opacy : 1
+
   return (
     <div
       className={styles.tile}

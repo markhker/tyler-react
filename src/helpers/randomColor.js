@@ -1,3 +1,8 @@
+/*
+This function generates random colors that contrast enough to distinguish between one another,
+and are not too loud (by default, all colours can have readable black/dark font overlayed)
+Based on https://github.com/sterlingwes/RandomColor
+*/
 const hexWidth = 2
 const goldenRatio = 0.618033988749895
 

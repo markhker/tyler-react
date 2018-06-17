@@ -17,6 +17,7 @@ class SubmitScore extends React.Component {
     disabled: true
   }
 
+  // Method that evaluates the value of the nickname input, enable the send button if complies with the evaluation and sets its state value
   handleChange = name => event => {
     const value = event.target.value
 

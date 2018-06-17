@@ -1,3 +1,4 @@
+// I use Redux Ducks https://github.com/erikras/ducks-modular-redux
 import {
   makeAsyncActionCreator,
   makeAsyncReducer,

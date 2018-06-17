@@ -18,6 +18,7 @@ const Transition = props => {
 
 class LeaderBoard extends React.Component {
   render () {
+    // Function to order the scores descending, and take only the first 5
     const topScores = this.props.data
       ? getTopN(this.props.data, 'score', 5)
       : undefined

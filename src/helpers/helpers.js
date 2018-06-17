@@ -1,3 +1,4 @@
+// This function sort an array of data from highest to lowest, and returns only the first n
 export const getTopN = (arr, prop, n) => {
   // clone before sorting, to preserve the original array
   var clone = [...arr]
