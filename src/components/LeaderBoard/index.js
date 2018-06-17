@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button'
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
@@ -7,7 +8,7 @@ import DialogContentText from '@material-ui/core/DialogContentText'
 import DialogTitle from '@material-ui/core/DialogTitle'
 import Slide from '@material-ui/core/Slide'
 
-import { getTopN } from '../../hepers/helpers'
+import { getTopN } from '../../helpers/helpers'
 
 import styles from './styles.css'
 
@@ -53,6 +54,12 @@ class LeaderBoard extends React.Component {
       </div>
     )
   }
+}
+
+LeaderBoard.propTypes = {
+  data: PropTypes.array,
+  open: PropTypes.bool,
+  handleClose: PropTypes.func
 }
 
 export default LeaderBoard

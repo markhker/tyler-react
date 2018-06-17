@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import styles from './styles.css'
 
@@ -15,6 +16,14 @@ const Tile = props => {
       onClick={props.onClick}
     />
   )
+}
+
+Tile.propTypes = {
+  item: PropTypes.string,
+  opacy: PropTypes.number,
+  color: PropTypes.string,
+  basis: PropTypes.number,
+  onClick: PropTypes.func
 }
 
 export default Tile

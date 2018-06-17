@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 import Dialog from '@material-ui/core/Dialog'
@@ -89,6 +90,13 @@ class SubmitScore extends React.Component {
       </div>
     )
   }
+}
+
+SubmitScore.propTypes = {
+  open: PropTypes.bool,
+  ready: PropTypes.bool,
+  handlePlayAgain: PropTypes.func,
+  handleScoreModalReady: PropTypes.func
 }
 
 export default SubmitScore

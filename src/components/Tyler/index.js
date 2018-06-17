@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Card from '@material-ui/core/Card'
 import Tile from '../Tile'
 
@@ -63,6 +64,14 @@ const Tyler = props => {
       {boxes}
     </Card>
   )
+}
+
+Tyler.propTypes = {
+  tiles: PropTypes.number,
+  color: PropTypes.string,
+  opacity: PropTypes.number,
+  oddClicked: PropTypes.func,
+  normalClicked: PropTypes.func
 }
 
 export default Tyler
