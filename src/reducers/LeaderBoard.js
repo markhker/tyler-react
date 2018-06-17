@@ -6,8 +6,6 @@ import {
   composeReducers
 } from 'redux-toolbelt'
 import { call, put, takeLatest, all, select, fork } from 'redux-saga/effects'
-import { createSelector } from 'reselect'
-import get from 'lodash.get'
 import { rsf } from '../config/firebase'
 
 // API

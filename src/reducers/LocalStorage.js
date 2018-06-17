@@ -1,7 +1,5 @@
 import { makeAsyncActionCreator, makeAsyncReducer } from 'redux-toolbelt'
 import { call, put, takeLatest, all } from 'redux-saga/effects'
-import { createSelector } from 'reselect'
-import get from 'lodash.get'
 
 // API
 export const getLocalStorage = async () => {
