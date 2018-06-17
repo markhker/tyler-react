@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as leaderBoardActions from '../../reducers/LeaderBoard'
 import { Link } from 'react-router-dom'
-import { getHex } from '../../hepers/randomColor'
+import { getHex } from '../../helpers/randomColor'
 
 import Layout from '../../components/Layout'
 import Title from '../../components/Title'
