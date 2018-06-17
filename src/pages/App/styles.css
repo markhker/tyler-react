@@ -1,0 +1,30 @@
+:global(html) {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Roboto';
+  font-size: 100%;
+  height: 100%;
+}
+
+:global(*) {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
+:global(body) {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+  font-weight: 300;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto';
+  overflow: hidden;
+  color: #3185FC;
+}
